@@ -15,9 +15,9 @@ def show_category(request, category_slug, template_name="catalog/category.html")
     return render(request, template_name, locals())
 
 def show_product(request, product_slug, template_name="catalog/product.html"):
-    product = get_object_or_404(Product, slug=product_slug)
-    categories = product.categories.filter(is_active=True)
-    page_title = product.name
-    meta_keywords = product.meta_keywords
-    meta_description = product.meta_description
+    p = get_object_or_404(Product, slug=product_slug)
+    categories = p.categories.filter(is_active=True)
+    page_title = p.name
+    meta_keywords = p.meta_keywords
+    meta_description = p.meta_description
     return render(request, template_name, locals())

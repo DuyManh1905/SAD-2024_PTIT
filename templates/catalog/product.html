@@ -1,7 +1,7 @@
 {% extends "catalog.html" %} 
 {% block content %}
 <div class="product_image">
-    <img src="/static/images/products/main/{{ p.image }}" alt="{{ p.name }}" />
+    <img src="/static/images/products/main/{{ p.image }}" alt="ảnh sản phẩm" />
     <!-- <img src="{{ MEDIA_URL }}images/products/main/{{ p.image }}" alt="{{ p.name }}" /> -->
 </div>
 <h1>{{ p.name }}</h1>
@@ -10,7 +10,7 @@
 <br />
     In categor{{ categories.count|pluralize:"y,ies" }}: 
     {% for c in categories %}
-<a href="{{ c.get_absolute_url }}">{{ c.name }}</a>
+        <a href="{{ c.get_absolute_url }}">{{ c.name }}</a>
     {% if not forloop.last %}, 
     {% endif %} 
     {% endfor %}
