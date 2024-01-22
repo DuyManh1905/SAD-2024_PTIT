@@ -21,7 +21,19 @@
     Now: $ {{ p.price }} {% else %} Price: $ {{ p.price }} 
 {% endif %}
 <br /><br />
-[add to cart button]
+
+    <ul class="errorlist" style="background-color: red; color: #fff; width: 600px; padding: 5px 5px; margin-bottom: 8px;"> 
+        <li>Please enter a valid quantity.</li> 
+   </ul> 
+
+    <form method="post" action="." class="cart"> 
+        {% csrf_token %}
+        {{ form.as_p }} 
+        <br /> 
+        <input type="submit" value="Add To Cart" name="submit" alt="Add To Cart" /> 
+    </form> 
+
+   <div class="cb"></div> 
 <br /><br />
 <div class="cb"><br /><br /></div>
 <h3>Product Description</h3>
