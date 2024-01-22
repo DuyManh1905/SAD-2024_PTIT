@@ -1,10 +1,11 @@
 {% extends "base.html" %} 
+
 {% block site_wrapper %}
 <div id="main">
     <a href="#content" class="skip_link">Skip to main content</a>
     <div id="banner">
         <div class="bannerIEPadder">
-            <div class="cart_box">[link to cart here]</div>
+            <div class="cart_box">[CART]</div>
             Modern Musician
         </div>
     </div>
@@ -16,7 +17,7 @@
             <div class="sidebarIEPadder">
                 [search box here]
                 <br />
-                [category listing here]
+                {% include "tags/category_list.html" %} 
             </div>
         </div>
         <div id="content">
@@ -25,7 +26,7 @@
         </div>
     </div>
     <div id="footer">
-        <div class="footerIEPadder">[footer here]</div>
+        <div class="footerIEPadder">[Duy Manh @Nocopyright]</div>
     </div>
 </div>
 {% endblock %}
