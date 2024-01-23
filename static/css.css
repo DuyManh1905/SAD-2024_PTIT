@@ -30,7 +30,7 @@ body {
 
 #main {
     margin: 0 auto;
-    width: 100vw;
+    width: 90vw;
     background-color: White;
 }
 
@@ -44,11 +44,11 @@ body {
 .footerIEPadder {
     padding: 5px;
     background-color: #ac5e71;
-    height: 100px;
+    height: 50px;
 }
 
 #banner {
-    width: 100vw;
+    width: 90vw;
     height: 75px;
     background-color: DarkOrange;
     color: White;
@@ -70,13 +70,13 @@ div.cart_box a {
 }
 
 #sidebar {
-    width: 100vw;
+    width: 90vw;
     float: left;
     ;
 }
 
 #content {
-    width: 100vw;
+    width: 90vw;
     float: left;
 }
 
@@ -95,7 +95,7 @@ a.skip_link {
 }
 
 #navigation {
-    width: 100vw;
+    width: 90vw;
     height: auto;
     background-color: #98AC5E;
     text-align: middle;
@@ -153,7 +153,7 @@ ul.errorlist {
 
 /* styles for shopping cart page */
 table#shopping_cart {
-    width: 100%;
+    width: 90%;
     border-collapse: collapse;
     color: #616161;
 }
